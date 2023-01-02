@@ -9,9 +9,9 @@ export const Navbar = () => {
     <div className=" bg-zinc-500 bg-opacity-10 backdrop-blur-md h-14  ring-white/20 flex items-center justify-between px-14">
     <div className="flex items-center">
       <a href='/' className="text-2xl text-white font-bold mr-8">OSTIMTECH CLUBS</a>
-      <a href="#" className="mx-4 text-sm text-sky-200 font-light">Hakkımızda</a>
-      <a href="#" className="mx-4 text-sm text-sky-200 font-light">Projelerimiz</a>
-      <a href="#" className="mx-4 text-sm text-sky-200 font-light">İletişim</a>
+      <a href="#" className="mx-4 text-sm text-sky-200 font-light md:max-lg:hidden">Hakkımızda</a>
+      <a href="#" className="mx-4 text-sm text-sky-200 font-light md:max-lg:hidden">Projelerimiz</a>
+      <a href="#" className="mx-4 text-sm text-sky-200 font-light md:max-lg:hidden">İletişim</a>
     </div>
     
 

@@ -10,8 +10,8 @@ import { PrivateRoute } from "./utils/PrivateRoute";
 
 export const App = () => {
   return (
-    <AuthProvider>
     <Router>
+    <AuthProvider>
       <Navbar />
       <Routes>
         <Route element={<PrivateRoute />}>
@@ -20,7 +20,7 @@ export const App = () => {
         </Route>
         <Route path="/Login" home element={<Login />} />
       </Routes>
-    </Router>
     </AuthProvider>
+    </Router>
   );
 };
