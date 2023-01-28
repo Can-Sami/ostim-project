@@ -1,6 +1,6 @@
 import React from 'react'
 import {useContext} from 'react'
-import AuthContext from './context/AuthContext'
+import AuthContext from '../context/AuthContext'
 
 
 
@@ -9,12 +9,13 @@ export const Login = () => {
   return (
     <div>
     <form onSubmit={loginUser}>
-      <div className="flex flex-col items-center mt-12 h-5/6 bg-zinc-100/5 mx-64 rounded-xl py-10 backdrop-blur-lg outline-double outline-1 outline-white/10">
-        <h1 className="text-3xl text-white font-semibold"> ÜYE GİRİŞİ</h1>
+      <div className='flex items-center justify-center'>
+      <div className="flex flex-col items-center mt-24 w-1/2 h-5/6 bg-gray-400/5 shadow-xl ring-1 ring-gray-900 ring-opacity-10 rounded-xl py-10 backdrop-blur-lg outline-double outline-1 outline-white/10">
+        <h1 className="text-3xl text-gray-900 font-semibold"> ÜYE GİRİŞ FORMU</h1>
 
 
-        <div className="flex flex-col w-full px-44 ">
-          <h1 className=" text-white my-2 mx-1">Eposta</h1>
+        <div className="flex flex-col w-full px-44 mt-6 ">
+          <h1 className=" text-gray-900 my-2 mx-1">Eposta</h1>
           <div className="relative rounded-md shadow-sm w-full mx-1">
             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
               <svg
@@ -23,7 +24,7 @@ export const Login = () => {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                className="w-5 h-5 text-cyan-400"
+                className="w-5 h-5 text-gray-900"
               >
                 <path
                   stroke-linecap="round"
@@ -34,8 +35,8 @@ export const Login = () => {
             </div>
             <label htmlFor="email">
               <input
-                className="form-input block w-full pl-10 pr-3 py-2  leading-5 rounded-md transition duration-150 ease-in-out sm:text-sm sm:leading-5 bg-zinc-700/90 text-white/90 focus:outline-none focus:ring-1 focus:ring-cyan-300 focus:border-cyan-300 focus:placeholder-white/50 focus:bg-zinc-700/80"
-                placeholder="Eposta adresinizi giriniz..."
+              className="form-input block placeholder:text-gray-700/60 w-full pl-10 pr-3 py-2 leading-5 rounded-md transition duration-150 ease-in-out sm:text-sm sm:leading-5 bg-white text-gray-900 focus:outline-0 focus:ring-1 focus:ring-red-300 shadow-lg  focus:bg-gray-100"       
+              placeholder="Eposta adresinizi giriniz..."
                 type="email"
                 name="email"
               />
@@ -46,7 +47,7 @@ export const Login = () => {
     
 
         <div className="flex flex-col w-full px-44 ">
-          <h1 className=" text-white my-2 mx-1">Şifre</h1>
+          <h1 className=" text-gray-900 my-2 mx-1">Şifre</h1>
           <div className="relative rounded-md shadow-sm w-full mx-1">
             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
               <svg
@@ -55,7 +56,7 @@ export const Login = () => {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                className="w-5 h-5 text-cyan-400"
+                className="w-5 h-5 text-gray-900"
               >
                 <path
                   stroke-linecap="round"
@@ -65,7 +66,7 @@ export const Login = () => {
             </div>
             <label htmlFor="password">
               <input
-                className="form-input block w-full pl-10 pr-3 py-2  leading-5 rounded-md transition duration-150 ease-in-out sm:text-sm sm:leading-5 bg-zinc-700/90 text-white/90 focus:outline-none focus:ring-1 focus:ring-cyan-300 focus:border-cyan-300 focus:placeholder-white/50 focus:bg-zinc-700/80"
+              className="form-input block placeholder:text-gray-700/60 w-full pl-10 pr-3 py-2 leading-5 rounded-md transition duration-150 ease-in-out sm:text-sm sm:leading-5 bg-white text-gray-900 focus:outline-0 focus:ring-1 focus:ring-red-300 shadow-lg  focus:bg-gray-100"       
                 placeholder="Şifrenizi giriniz..."
                 type={"password"}
                 name={"password"}
@@ -76,16 +77,17 @@ export const Login = () => {
 
         <button
           type="submit"
-          className="text-zinc-900 text-md font-medium hover:bg-cyan-300 rounded-lg py-1 px-3 mt-4 duration-150  bg-cyan-400"
+          className="text-zinc-900 hover:bg-red-300 rounded-lg py-2 px-3 mt-8 duration-150  bg-red-400 shadow-md"
         >
           Girişi onayla
         </button>
-        <h1 className="mt-4 text-white/50">
-          Kayıtlı hesabın mı yok ? Hemen{" "}
-          <a href="/register" className="text-cyan-500">
+        <h1 className="mt-6 text-center text-gray-900/50">
+          Kayıtlı hesabın mı yok ? <br /> Hemen{" "}
+          <a href="/register" className="text-red-500">
             Kaydol
           </a>
         </h1>
+      </div>
       </div>
     </form>
   </div>
